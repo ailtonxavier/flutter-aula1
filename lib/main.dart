@@ -5,21 +5,8 @@ void main() {
     MaterialApp(
       routes: <String, WidgetBuilder>{
         '/': (context) => const RouteHome(),
-        '': (context) => const RouteValorX(),
-        '/valordex': (BuildContext context){
-          return Scaffold(
-            appBar: AppBar(
-              title: Text('Valor de X')
-            ),
-          );
-        },
-        '/valordey': (BuildContext context){
-          return Scaffold(
-            appBar: AppBar(
-              title: Text('Valor de Y'),
-            ),
-          );
-        }
+        '/valordex': (context) => const RouteValorX(),
+        '/valordey' : (context) => const RouteValorY(),
       }
     )
   );
@@ -32,7 +19,7 @@ class RouteHome extends StatelessWidget {
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text('home page'),
+        title: Text('Calculadora Maluca'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -72,7 +59,9 @@ class RouteValorX extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return Scaffold(
-
+      appBar: AppBar(
+        title: Text('Inserir valor de X'),
+      ),
     );
   }
 }
@@ -83,7 +72,9 @@ class RouteValorY extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      
+      appBar: AppBar(
+        title: Text('Inserir valor de Y'),
+      ),
     );
   }
 }
