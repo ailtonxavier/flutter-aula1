@@ -76,3 +76,14 @@ class RouteValorX extends StatelessWidget {
     );
   }
 }
+
+class RouteValorY extends StatelessWidget {
+  const RouteValorY ({super.key});
+
+  @override
+  Widget build(BuildContext context){
+    return Scaffold(
+      
+    );
+  }
+}
