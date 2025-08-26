@@ -28,25 +28,21 @@ class RouteHome extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text("X"),
-              IconButton(
-                onPressed: () => Navigator.pushNamed(context, '/valordex'),
-                icon: Icon(Icons.home))
+              TextButton(onPressed: () => Navigator.pushNamed(context, '/valordex'), child: Text('informar X')),
               ]),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: 
               [
                 Text("Y"),
-                IconButton(
-                onPressed: () => Navigator.pushNamed(context, '/valordey'),
-                icon: Icon(Icons.home))
+                TextButton(onPressed: () => Navigator.pushNamed(context, '/valordey'), child: Text('informar Y')),
               ]),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [Text("X"),]),
+            children: [Text("Resultado"),]),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [Text("X"), Text("Informar X")])
+            children: [Text("Calcular")])
         ],
       ),
     );
